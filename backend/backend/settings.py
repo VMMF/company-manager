@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'companymanager.apps.TasksplannerConfig', #can also add simply : companymanager'
+    'companymanager.apps.CompanymanagerConfig', #can also add simply : companymanager'
     'phone_field']
 
 MIDDLEWARE = [
@@ -85,7 +85,7 @@ DATABASES = {
 
             'ENGINE': 'django.db.backends.postgresql',
 
-            'NAME': 'tasks_planner_db',
+            'NAME': 'company_manager_db',
 
             'USER': 'postgres',
 
