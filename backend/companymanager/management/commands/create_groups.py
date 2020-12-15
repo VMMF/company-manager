@@ -41,9 +41,17 @@ GROUPS = {
 
 #add users here, classify them into Administration or Member, add initial email and default password
 USERS = {
-    "Admin" : ["Administration","admin@mydomain.com","1234"],
-    "Member" : ["Member","user@mydomain.com","1234"],
-
+    "JohnDoe" : ["Administration","admin@mydomain.com","1234"],
+    "Victor Mendez" : ["Member","user@mydomain.com","1234"],
+    "Fulano" : ["Member","user@mydomain.com","1234"],
+    "Mengano" : ["Member","user@mydomain.com","1234"],
+    "Max Mustermann" : ["Member","user@mydomain.com","1234"],
+    "Max Paragon" : ["Member","user@mydomain.com","1234"],
+    "Erika Mustermann" : ["Member","user@mydomain.com","1234"],
+    "Wang Wu" : ["Member","user@mydomain.com","1234"],
+    "Jean Dupont" : ["Member","user@mydomain.com","1234"],
+    "Ajay Kumar" : ["Member","user@mydomain.com","1234"],
+    "Mario Rossi" : ["Member","user@mydomain.com","1234"],
 }
 
 class Command(BaseCommand):

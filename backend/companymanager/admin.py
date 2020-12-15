@@ -44,20 +44,16 @@ def day_format_converter(date):
     return str(date.year) +"-"+ str(date.month) +"-"+ str(date.day)
 
 
-# def ExcelFormatConverter(pandas_data_frame):
-#     pandas_list = pandas_data_frame.to_numpy().tolist()
-#     pandas_list_no_duplicates = []
-#     [pandas_list_no_duplicates.append(x) for x in pandas_list if x not in pandas_list_no_duplicates] 
-#     return pandas_list_no_duplicates
+def ExcelProjectsLoader():
 
-# file_name = "PPI Projects.xlsx"
-# spreadsheet_file_path = os.path.join(settings.BASE_DIR, file_name)
-# spreadsheet_file_path = fr"{spreadsheet_file_path}"
+    """
+    ExcelProjectsLoader loads an existing Excel project list spreadsheet into the database.
+    The format of this spreadsheet is specific for this example and should be modified to be
+    used for any other Excel file format.
 
-# spreadsheet_file = open(spreadsheet_file_path)
-
-
-def PPIProjectsLoader():
+    The path to the Excel file is hardcoded and some assumptions about default values for some fields have been made.
+    This function should only be called once, while initially populating the database 
+    """
 
     spreadsheet_file = pandas.read_excel (r"C:\@Victor\Programming\Portfolio\PPI Projects.xlsx")
 
@@ -152,11 +148,11 @@ def PPIProjectsLoader():
     project_info = pandas.DataFrame(spreadsheet_file, columns = ["Project #","Project Client Name","Project Name","Project Date Created","Project Planner","Project Current Status","Project Internal Notes"]) 
     project_info = project_info.to_numpy().tolist()
 
-    # if Project Planner is not defined assume Grant Erb
+    # if Project Planner is not defined assume John Doe
     try:
-        default_project_planner = Staff.objects.get(staff_name = "Grant Erb")
+        default_project_planner = Staff.objects.get(staff_name = "John Doe")
     except ObjectDoesNotExist:
-        default_project_planner = Staff(staff_name = "Grant Erb",staff_position_in_company = "Electrical Engineer",staff_start_date_in_company="2005-01-01",staff_category = "Technical",staff_hourly_salary = 25.0)
+        default_project_planner = Staff(staff_name = "John Doe",staff_position_in_company = "Electrical Engineer",staff_start_date_in_company="2005-01-01",staff_category = "Technical",staff_hourly_salary = 25.0)
         default_project_planner.save()
 
     for project in project_info:
@@ -395,7 +391,16 @@ def PPIProjectsLoader():
 
 
 
-def PPITimeSheetLoader():
+def ExcelTimeSheetLoader():
+
+    """
+    ExcelTimeSheetLoader loads an existing Excel employee hours spreadsheet into the database.
+    The format of this spreadsheet is specific for this example and should be modified to be
+    used for any other Excel file format
+
+    The path to the Excel file is hardcoded and some assumptions about default values for some fields have been made.
+    This function should only be called once, while initially populating the database. 
+    """
 
 
     spreadsheet_file = pandas.read_excel (r"C:\@Victor\Programming\Portfolio\2018.xlsx")
@@ -449,28 +454,32 @@ def PPITimeSheetLoader():
 
 def order_worked_stats(order_obj):
 
-        dict_order_hours_by_employee = {} 
-        dict_order_hours_by_time_code = {} #TODO Use this dict for useful stats 
-        for staff_time_sheet in order_obj.order_present_in_timesheet_of.all():
-            dict_order_hours_by_employee[staff_time_sheet.time_sheet_owner.staff_name] = dict_order_hours_by_employee.get(staff_time_sheet.time_sheet_owner.staff_name,0) + staff_time_sheet.worked_hours_math()
-            dict_order_hours_by_time_code[staff_time_sheet.task_time_code.time_code_name] = dict_order_hours_by_time_code.get(staff_time_sheet.task_time_code.time_code_name,0) + staff_time_sheet.worked_hours_math()
+    """
+    order_worked_stats calculates some basic stats about different employee contribution on a same work order
+    """
 
-        dict_order_labor_cost_by_employee = {} 
-        weighted_salary_x_hour = 25
-        dict_order_hours_by_employee_at_weighted_salary_x_hour = {} # to store the equivalent hours worked by each employee if they were paid 25 x hour (if your salary is actually 50 x hour, each declared hour will count double)
-        for employee in dict_order_hours_by_employee.keys():
+    dict_order_hours_by_employee = {} 
+    dict_order_hours_by_time_code = {} #TODO Use this dict for useful stats 
+    for staff_time_sheet in order_obj.order_present_in_timesheet_of.all():
+        dict_order_hours_by_employee[staff_time_sheet.time_sheet_owner.staff_name] = dict_order_hours_by_employee.get(staff_time_sheet.time_sheet_owner.staff_name,0) + staff_time_sheet.worked_hours_math()
+        dict_order_hours_by_time_code[staff_time_sheet.task_time_code.time_code_name] = dict_order_hours_by_time_code.get(staff_time_sheet.task_time_code.time_code_name,0) + staff_time_sheet.worked_hours_math()
 
-            dict_order_labor_cost_by_employee[employee] =  Decimal(dict_order_hours_by_employee.get(employee,0)) * staff_time_sheet.time_sheet_owner.staff_hourly_salary.real 
+    dict_order_labor_cost_by_employee = {} 
+    weighted_salary_x_hour = 25
+    dict_order_hours_by_employee_at_weighted_salary_x_hour = {} # to store the equivalent hours worked by each employee if they were paid 25 x hour (if your salary is actually 50 x hour, each declared hour will count double)
+    for employee in dict_order_hours_by_employee.keys():
 
-            dict_order_hours_by_employee_at_weighted_salary_x_hour[employee] = Decimal(dict_order_hours_by_employee.get(employee,0)) * staff_time_sheet.time_sheet_owner.staff_hourly_salary.real/weighted_salary_x_hour
+        dict_order_labor_cost_by_employee[employee] =  Decimal(dict_order_hours_by_employee.get(employee,0)) * staff_time_sheet.time_sheet_owner.staff_hourly_salary.real 
+
+        dict_order_hours_by_employee_at_weighted_salary_x_hour[employee] = Decimal(dict_order_hours_by_employee.get(employee,0)) * staff_time_sheet.time_sheet_owner.staff_hourly_salary.real/weighted_salary_x_hour
 
 
-        to_return = ( round( sum(dict_order_hours_by_employee.values()) , 2 ), dict_order_hours_by_employee,
-                    round ( float( sum(dict_order_labor_cost_by_employee.values()) ) , 2 ), dict_order_labor_cost_by_employee,
-                    round( sum(dict_order_hours_by_employee_at_weighted_salary_x_hour.values()) , 2 ) , dict_order_hours_by_employee_at_weighted_salary_x_hour,
-                    dict_order_hours_by_time_code)    
-        
-        return to_return
+    to_return = ( round( sum(dict_order_hours_by_employee.values()) , 2 ), dict_order_hours_by_employee,
+                round ( float( sum(dict_order_labor_cost_by_employee.values()) ) , 2 ), dict_order_labor_cost_by_employee,
+                round( sum(dict_order_hours_by_employee_at_weighted_salary_x_hour.values()) , 2 ) , dict_order_hours_by_employee_at_weighted_salary_x_hour,
+                dict_order_hours_by_time_code)    
+    
+    return to_return
 
 
 
@@ -505,8 +514,8 @@ class ProjectModelAdmin(admin.ModelAdmin):
     autocomplete_fields = ["client"]
 
 
-    # PPIProjectsLoader()
-    # PPITimeSheetLoader()
+    # ExcelProjectsLoader()
+    # ExcelTimeSheetLoader()
 
 admin.site.register(Project, ProjectModelAdmin)
 

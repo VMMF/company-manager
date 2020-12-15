@@ -1,0 +1,1079 @@
+[
+{
+    "model": "companymanager.project",
+    "pk": 0,
+    "fields": {
+        "client": 1,
+        "project_name": "Time Off - unpaid",
+        "project_creation_date": "2004-06-26",
+        "project_planner": 2,
+        "project_status": "OP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 1,
+    "fields": {
+        "client": 1,
+        "project_name": "General Administration",
+        "project_creation_date": "2004-06-26",
+        "project_planner": 2,
+        "project_status": "OP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 2,
+    "fields": {
+        "client": 1,
+        "project_name": "Marketing, Expansion and Public Relations",
+        "project_creation_date": "2004-06-26",
+        "project_planner": 2,
+        "project_status": "OP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 3,
+    "fields": {
+        "client": 1,
+        "project_name": "Bookkeeping and Accounting",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 4,
+    "fields": {
+        "client": 1,
+        "project_name": "Owner and Legal Functions",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 5,
+    "fields": {
+        "client": 1,
+        "project_name": "Office and Building Maintenance",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 6,
+    "fields": {
+        "client": 1,
+        "project_name": "Education and Training",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 7,
+    "fields": {
+        "client": 1,
+        "project_name": "Computer and Network",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 9,
+    "fields": {
+        "client": 1,
+        "project_name": "Vacation - paid",
+        "project_creation_date": "2007-06-01",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 10,
+    "fields": {
+        "client": 1,
+        "project_name": "Stat Holiday - paid",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 11,
+    "fields": {
+        "client": 1,
+        "project_name": "Community and Non Profit Organizations",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 21,
+    "fields": {
+        "client": 3,
+        "project_name": "General Administration",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 22,
+    "fields": {
+        "client": 3,
+        "project_name": "Marketing and Expansion and Public Relations",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 23,
+    "fields": {
+        "client": 3,
+        "project_name": "Website",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.project",
+    "pk": 30,
+    "fields": {
+        "client": 3,
+        "project_name": "CSA, ISO, Safety and Quality Control Admin",
+        "project_creation_date": "2012-03-30",
+        "project_planner": 2,
+        "project_status": "IP",
+        "project_internal_notes": ""
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 1,
+    "fields": {
+        "order_project": 0,
+        "order_number": 1,
+        "order_name": "Breaks or Time Off",
+        "order_and_project_number": "0-1",
+        "order_description": "",
+        "order_creation_date": "2004-06-26",
+        "expected_order_completion_date": "2019-03-30",
+        "order_completion_date": null,
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "OP",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 2,
+    "fields": {
+        "order_project": 1,
+        "order_number": 1,
+        "order_name": "General Administration",
+        "order_and_project_number": "1-1",
+        "order_description": "",
+        "order_creation_date": "2004-06-28",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2004-06-28",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 3,
+    "fields": {
+        "order_project": 2,
+        "order_number": 1,
+        "order_name": "Marketing, Expansion and Public Relations",
+        "order_and_project_number": "2-1",
+        "order_description": "",
+        "order_creation_date": "2004-06-28",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2004-06-28",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 4,
+    "fields": {
+        "order_project": 3,
+        "order_number": 1,
+        "order_name": "Bookkeeping and Accounting",
+        "order_and_project_number": "3-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 6,
+    "fields": {
+        "order_project": 5,
+        "order_number": 1,
+        "order_name": "Office and Building Maintenance",
+        "order_and_project_number": "5-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 7,
+    "fields": {
+        "order_project": 6,
+        "order_number": 1,
+        "order_name": "Education and Training",
+        "order_and_project_number": "6-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-12-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 8,
+    "fields": {
+        "order_project": 7,
+        "order_number": 1,
+        "order_name": "Computer and Network",
+        "order_and_project_number": "7-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-12-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 10,
+    "fields": {
+        "order_project": 9,
+        "order_number": 1,
+        "order_name": "Paid Vacation",
+        "order_and_project_number": "9-1",
+        "order_description": "",
+        "order_creation_date": "2007-06-01",
+        "expected_order_completion_date": "2022-06-01",
+        "order_completion_date": "2007-06-01",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 11,
+    "fields": {
+        "order_project": 10,
+        "order_number": 1,
+        "order_name": "Paid Stat Holiday",
+        "order_and_project_number": "10-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 12,
+    "fields": {
+        "order_project": 11,
+        "order_number": 1,
+        "order_name": "Rotary Club and Non Profit Organizations",
+        "order_and_project_number": "11-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 15,
+    "fields": {
+        "order_project": 4,
+        "order_number": 1,
+        "order_name": "Owner and Legal Functions",
+        "order_and_project_number": "20-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": null,
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "DA",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 16,
+    "fields": {
+        "order_project": 21,
+        "order_number": 1,
+        "order_name": "General Administration",
+        "order_and_project_number": "21-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-12-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 17,
+    "fields": {
+        "order_project": 22,
+        "order_number": 1,
+        "order_name": "Marketing and Expansion and Public Relations",
+        "order_and_project_number": "22-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 18,
+    "fields": {
+        "order_project": 23,
+        "order_number": 1,
+        "order_name": "Website",
+        "order_and_project_number": "23-1",
+        "order_description": "",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-12-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.order",
+    "pk": 19,
+    "fields": {
+        "order_project": 30,
+        "order_number": 1,
+        "order_name": "CSA, ISO, Safety and Quality Control Admin",
+        "order_and_project_number": "30-1",
+        "order_description": "CSA Certification, Policies, procedures, quality control, environment health and safety",
+        "order_creation_date": "2012-03-30",
+        "expected_order_completion_date": "2022-03-30",
+        "order_completion_date": "2012-03-30",
+        "order_planner": 2,
+        "order_service_type": 5,
+        "order_budget_total": "0.00",
+        "order_budget_labor": "0.00",
+        "order_budget_material": "0.00",
+        "order_times_reviewed": 0,
+        "order_model_number": "",
+        "order_serial_number": "",
+        "order_customer_PO": "",
+        "order_invoice_number": "",
+        "order_internal_notes": "",
+        "order_client_notes": "",
+        "order_status": "CO",
+        "order_billing": "FI",
+        "order_facility": []
+    }
+},
+{
+    "model": "companymanager.servicecategory",
+    "pk": 1,
+    "fields": {
+        "service_category_name": "Maintenance and Testing"
+    }
+},
+{
+    "model": "companymanager.servicecategory",
+    "pk": 2,
+    "fields": {
+        "service_category_name": "Engineering, Design-Build, Fabrication, Installation"
+    }
+},
+{
+    "model": "companymanager.servicecategory",
+    "pk": 3,
+    "fields": {
+        "service_category_name": "Unspecified"
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 1,
+    "fields": {
+        "service_name": "Maintenance and Testing",
+        "service_category": 1
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 2,
+    "fields": {
+        "service_name": "Product Design and Manufacturing",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 3,
+    "fields": {
+        "service_name": "Electrical Studies and Arc Flash Improvements",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 4,
+    "fields": {
+        "service_name": "Electrical Drawings",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 5,
+    "fields": {
+        "service_name": "Overhead and Adminstration",
+        "service_category": 3
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 9,
+    "fields": {
+        "service_name": "Unspecified",
+        "service_category": 3
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 17,
+    "fields": {
+        "service_name": "Customer Project Administration and Management",
+        "service_category": 3
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 61,
+    "fields": {
+        "service_name": "Field Technical Services",
+        "service_category": 1
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 83,
+    "fields": {
+        "service_name": "Automation Services",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 85,
+    "fields": {
+        "service_name": "Engineering Design",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 92,
+    "fields": {
+        "service_name": "Engineer, Procure, Construct",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 120,
+    "fields": {
+        "service_name": "AutoCAD Drafting",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 170,
+    "fields": {
+        "service_name": "Product Sales (purchase and resell)",
+        "service_category": 3
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 184,
+    "fields": {
+        "service_name": "Shop Work",
+        "service_category": 1
+    }
+},
+{
+    "model": "companymanager.service",
+    "pk": 231,
+    "fields": {
+        "service_name": "Engineering Analysis",
+        "service_category": 2
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 1,
+    "fields": {
+        "staff_name": "Victor Mendez",
+        "staff_position_in_company": "Project Engineer - Electrical",
+        "staff_start_date_in_company": "2018-09-15",
+        "staff_category": 2,
+        "staff_hourly_salary": "29.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 2,
+    "fields": {
+        "staff_name": "JohnDoe",
+        "staff_position_in_company": "Electrical Engineer",
+        "staff_start_date_in_company": "2005-09-15",
+        "staff_category": 2,
+        "staff_hourly_salary": "25.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 3,
+    "fields": {
+        "staff_name": "Fulano",
+        "staff_position_in_company": "Electrical Engineering Technologist",
+        "staff_start_date_in_company": "2005-01-01",
+        "staff_category": 1,
+        "staff_hourly_salary": "40.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 4,
+    "fields": {
+        "staff_name": "Mengano",
+        "staff_position_in_company": "Electrical Planner",
+        "staff_start_date_in_company": "2011-09-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "33.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 5,
+    "fields": {
+        "staff_name": "Max Mustermann",
+        "staff_position_in_company": "Electrical Technician",
+        "staff_start_date_in_company": "2019-09-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "30.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 6,
+    "fields": {
+        "staff_name": "Max Paragon",
+        "staff_position_in_company": "Production Coordinator",
+        "staff_start_date_in_company": "2015-02-01",
+        "staff_category": 3,
+        "staff_hourly_salary": "20.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 7,
+    "fields": {
+        "staff_name": "Erika Mustermann",
+        "staff_position_in_company": "Office Administrator, Environment Coordinator",
+        "staff_start_date_in_company": "2018-01-01",
+        "staff_category": 3,
+        "staff_hourly_salary": "20.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 8,
+    "fields": {
+        "staff_name": "Juan Perez",
+        "staff_position_in_company": "Project Engineer - Mechanical",
+        "staff_start_date_in_company": "2019-01-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "23.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 9,
+    "fields": {
+        "staff_name": "Wang Wu",
+        "staff_position_in_company": "Electrical Technician",
+        "staff_start_date_in_company": "2018-10-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "18.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 10,
+    "fields": {
+        "staff_name": "Jean Dupont",
+        "staff_position_in_company": "Electrical Technician",
+        "staff_start_date_in_company": "2019-01-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "18.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 11,
+    "fields": {
+        "staff_name": "Ajay Kumar",
+        "staff_position_in_company": "Lead Electrical Technician",
+        "staff_start_date_in_company": "2008-01-01",
+        "staff_category": 2,
+        "staff_hourly_salary": "45.00"
+    }
+},
+{
+    "model": "companymanager.staff",
+    "pk": 12,
+    "fields": {
+        "staff_name": "Mario Rossi",
+        "staff_position_in_company": "Finance",
+        "staff_start_date_in_company": "2020-03-01",
+        "staff_category": 3,
+        "staff_hourly_salary": "18.00"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 1,
+    "fields": {
+        "staff_category_name": "Electrical"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 2,
+    "fields": {
+        "staff_category_name": "Technical"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 3,
+    "fields": {
+        "staff_category_name": "Administration"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 4,
+    "fields": {
+        "staff_category_name": "Planning and Design"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 5,
+    "fields": {
+        "staff_category_name": "Mechanical"
+    }
+},
+{
+    "model": "companymanager.staffcategory",
+    "pk": 6,
+    "fields": {
+        "staff_category_name": "Vacant Positions"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 1,
+    "fields": {
+        "time_code_name": "Field on-site",
+        "time_code_description": "Used on the hours worked outside the office-shop"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 2,
+    "fields": {
+        "time_code_name": "Travel",
+        "time_code_description": "Used to mark the hours spent travelling"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 3,
+    "fields": {
+        "time_code_name": "Rework",
+        "time_code_description": "After Order status is \"Design approved\"\". Used when a task previously finished is done a second time (e.g. because of last minute changes, changes of mind, work not properly reviewed or planned before executed, etc.)"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 4,
+    "fields": {
+        "time_code_name": "Information analysis",
+        "time_code_description": "Used for time spent going through pictures or drawings to determine missing information"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 5,
+    "fields": {
+        "time_code_name": "Datasheet and manuals study",
+        "time_code_description": "Used for tasks in which the study of a manual is required to understand the correct functioning of an element"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 6,
+    "fields": {
+        "time_code_name": "Quoting",
+        "time_code_description": "Used for time spent on creating quotes and scopes"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 7,
+    "fields": {
+        "time_code_name": "Drawings and modelling",
+        "time_code_description": "Used for time spent on hand sketches or creating models on AutoCAD, SolidWorks, SKM single lines, etc."
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 9,
+    "fields": {
+        "time_code_name": "Final report",
+        "time_code_description": "Used for time spent writing final reports"
+    }
+},
+{
+    "model": "companymanager.timecode",
+    "pk": 10,
+    "fields": {
+        "time_code_name": "Review",
+        "time_code_description": "Used for time spent reviewing work results or improving elements of a design as long as the Order status is not \"Design approved\""
+    }
+},
+{
+    "model": "companymanager.client",
+    "pk": 1,
+    "fields": {
+        "client_name": "Test client",
+        "client_industry": 1
+    }
+},
+{
+    "model": "companymanager.client",
+    "pk": 3,
+    "fields": {
+        "client_name": "The company itself",
+        "client_industry": 1
+    }
+},
+{
+    "model": "companymanager.clientfacility",
+    "pk": 1,
+    "fields": {
+        "client_name": 1,
+        "facility_name": "A test facility"
+    }
+},
+{
+    "model": "companymanager.clientfacility",
+    "pk": 9,
+    "fields": {
+        "client_name": 3,
+        "facility_name": "Undefined"
+    }
+},
+{
+    "model": "companymanager.clientdepartment",
+    "pk": 1,
+    "fields": {
+        "client_name": 1,
+        "client_department_name": "Undefined"
+    }
+},
+{
+    "model": "companymanager.clientdepartment",
+    "pk": 9,
+    "fields": {
+        "client_name": 3,
+        "client_department_name": "Undefined"
+    }
+},
+{
+    "model": "companymanager.clientaccount",
+    "pk": 1,
+    "fields": {
+        "client_name": 1,
+        "account_user_name": "Undefined",
+        "account_email": "",
+        "account_phone": null
+    }
+},
+{
+    "model": "companymanager.clientaccount",
+    "pk": 9,
+    "fields": {
+        "client_name": 3,
+        "account_user_name": "Undefined",
+        "account_email": "",
+        "account_phone": null
+    }
+},
+{
+    "model": "companymanager.clientindustry",
+    "pk": 1,
+    "fields": {
+        "client_industry_name": "To be defined"
+    }
+}
+]
