@@ -2,16 +2,16 @@ To clean windows cmd console
 Command : cls 
 
 To save database content to JSON
-Command : python manage.py  dumpdata companymanager --indent 4 > companymanager/fixtures/dataPPI.json
+Command : python manage.py  dumpdata companymanager --indent 4 > companymanager/fixtures/dataExampleCompany.json
 Reference: https://docs.djangoproject.com/en/3.1/topics/serialization/#natural-keys
 
 
 To load fixtures (database data) and avoid populating the database by hand
-Command: python manage.py loaddata dataPPI.json
+Command: python manage.py loaddata dataExampleCompany.json
 Reference:https://docs.djangoproject.com/en/3.1/topics/serialization/#natural-keys
+Note: If the size of the fixture is too big sometimes it is necessary to save it as UTF-8 (This can be done on Notepad++ in Encoding menu) before loading it
 
-
-To reset database:
+To reset database, reload the data and restart the server:
 
 set PGPASSWORD=1234&& psql -U postgres
 DROP DATABASE IF EXISTS company_manager_db;

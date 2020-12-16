@@ -930,6 +930,18 @@
     }
 },
 {
+    "model": "companymanager.stafftimesheet",
+    "pk": 1,
+    "fields": {
+        "time_sheet_owner": 2,
+        "task_belongs_to_order": 2,
+        "task_start_time": "2020-12-15T16:00:00Z",
+        "task_end_time": "2020-12-15T20:30:00Z",
+        "task_time_code": 4,
+        "task_description": "Test work hours"
+    }
+},
+{
     "model": "companymanager.timecode",
     "pk": 1,
     "fields": {

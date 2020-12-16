@@ -317,7 +317,7 @@ class Service (models.Model):
 class Staff(models.Model):
 
     #link the staff table to django authorization for User
-    authentication_and_authorisation_user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
+    # authentication_and_authorisation_user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
     
     staff_name = models.CharField(max_length=200,unique=True)
     staff_position_in_company = models.CharField(max_length=200)

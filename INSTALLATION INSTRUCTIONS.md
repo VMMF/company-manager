@@ -116,12 +116,14 @@ Python 3.9.1
 - On django App companymanager admin.py, register the models previously defined in models.py
 
 - (Optional) Load any previously saved database objects 
-	Command: python manage.py loaddata companyData.json
+	Command: python manage.py loaddata dataExampleCompany.json
 	
 	
 - Start the backend project on a development server (not suitable for final use, only for development)
 	Command: python manage.py runserver
+	Open browser address http://127.0.0.1:8000/admin/
 	
 
 	
 #Frontend
+- To be completed (Using Django Admin interface at the moment)
